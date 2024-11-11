@@ -1,0 +1,219 @@
+/* Estilos Generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #EDAE48, #D14958);
+    color: #000;
+    overflow-x: hidden;
+}
+
+header {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul.social-icons {
+    gap: 15px;
+}
+
+nav ul.social-icons li {
+    transition: transform 0.3s ease;
+}
+
+nav ul.social-icons li:hover {
+    transform: scale(1.2);
+}
+
+nav ul.social-icons li a {
+    color: #FF8000;
+    font-size: 20px;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #FF8000;
+}
+
+.logo {
+    width: 150px;
+}
+
+.hero {
+    padding: 100px 20px;
+    background: url('logo.png') no-repeat center;
+    background-size: 25%;
+    background-blend-mode: overlay;
+    text-align: center;
+}
+
+.no-transparency {
+    opacity: 1 !important;
+    background-blend-mode: normal;
+}
+
+h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 100px;
+    color: #FF8000;
+    animation: slide-in 1.5s ease-in-out forwards;
+    cursor: pointer;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 42px;
+    margin-top: 10px;
+    animation: fade-in 2s ease-in-out forwards;
+    cursor: pointer;
+}
+
+h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    margin-top: 10px;
+    font-weight: 300;
+    animation: fade-in-up 2.5s ease-in-out forwards;
+    cursor: pointer;
+}
+
+/* Animaciones de los títulos */
+@keyframes slide-in {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in-up {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Animaciones con el cursor */
+h1:hover, h2:hover, h3:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+/* Testimonios */
+.testimonios {
+    background-color: #102C54;
+    padding: 50px 20px;
+    color: white;
+    text-align: center;
+}
+
+.testimonios h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.testimonial {
+    margin: 20px 0;
+}
+
+.whatsapp-chat {
+    background-color: #000;
+    color: #FFF;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 16px;
+    display: inline-block;
+}
+
+/* Formulario de contacto */
+.contact-form {
+    padding: 50px 20px;
+    background-color: #D14958;
+    text-align: center;
+}
+
+.contact-form h2 {
+    color: #FFF;
+    margin-bottom: 20px;
+}
+
+.contact-form form {
+    display: inline-block;
+    max-width: 600px;
+    text-align: left;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #FFF;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #FF8000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #102C54;
+}
